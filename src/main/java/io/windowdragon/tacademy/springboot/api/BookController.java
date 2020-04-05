@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import io.windowdragon.tacademy.springboot.domain.Book;
-import io.windowdragon.tacademy.springboot.service.Bookservice;
+import io.windowdragon.tacademy.springboot.service.BookService;
 import org.springframework.web.bind.annotation.PathVariable;  
 
 @RestController
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 public class BookController {
 
 	@Autowired
-	Bookservice bookService;
+	BookService bookService;
 	
 	@GetMapping("/{bookId}")
 	public ResponseEntity<Book> findById(@PathVariable Long bookId){	

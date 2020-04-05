@@ -4,7 +4,7 @@ import java.util.Optional;
 
 import io.windowdragon.tacademy.springboot.domain.Book;
 
-public interface Bookservice {
+public interface BookService {
 
 	Optional<Book> findById(Long Id);
 	

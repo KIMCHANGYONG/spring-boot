@@ -13,11 +13,12 @@ import io.windowdragon.tacademy.springboot.domain.BookRepository;
 @Service
 @Transactional
 
-class Bookserviceimpl implements Bookservice {
+class BookServiceimpl implements BookService {
 
 	private final BookRepository bookRepository;	
 	
-	public Bookserviceimpl(BookRepository bookRepository) {
+
+	public BookServiceimpl(BookRepository bookRepository) {
 
 		this.bookRepository = bookRepository;
 	}
